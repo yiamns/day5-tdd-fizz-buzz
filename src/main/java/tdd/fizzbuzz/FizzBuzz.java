@@ -1,7 +1,7 @@
 package tdd.fizzbuzz;
 
 public class FizzBuzz {
-    public static String countOff(int order) {
+    public static String generateFizzBuzzResult(int order) {
         if(order % 15 == 0) {
             return "fizzbuzz";
         }

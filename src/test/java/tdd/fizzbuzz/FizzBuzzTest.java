@@ -9,7 +9,7 @@ public class FizzBuzzTest {
     public void should_return_1_when_input_1() {
         int order = 1;
 
-        String word = FizzBuzz.countOff(order);
+        String word = FizzBuzz.generateFizzBuzzResult(order);
 
         assertEquals("1", word);
     }
@@ -18,7 +18,7 @@ public class FizzBuzzTest {
     public void should_return_2_when_input_2() {
         int order = 13;
 
-        String word = FizzBuzz.countOff(order);
+        String word = FizzBuzz.generateFizzBuzzResult(order);
 
         assertEquals("13", word);
     }
@@ -27,7 +27,7 @@ public class FizzBuzzTest {
     public void should_return_fizz_when_input_can_divided_by_3() {
         int order = 3;
 
-        String word = FizzBuzz.countOff(order);
+        String word = FizzBuzz.generateFizzBuzzResult(order);
 
         assertEquals("fizz", word);
     }
@@ -36,7 +36,7 @@ public class FizzBuzzTest {
     public void should_return_buzz_when_input_can_divided_by_5() {
         int order = 5;
 
-        String word = FizzBuzz.countOff(order);
+        String word = FizzBuzz.generateFizzBuzzResult(order);
 
         assertEquals("buzz", word);
     }
@@ -45,7 +45,7 @@ public class FizzBuzzTest {
     public void should_return_fizzbuzz_when_input_can_divided_by_3_and_5() {
         int order = 150;
 
-        String word = FizzBuzz.countOff(order);
+        String word = FizzBuzz.generateFizzBuzzResult(order);
 
         assertEquals("fizzbuzz", word);
     }
@@ -54,7 +54,7 @@ public class FizzBuzzTest {
     public void should_blank_when_input_Less_than_or_equal_to_0() {
         int order = -1;
 
-        String word = FizzBuzz.countOff(order);
+        String word = FizzBuzz.generateFizzBuzzResult(order);
 
         assertEquals("", word);
     }
