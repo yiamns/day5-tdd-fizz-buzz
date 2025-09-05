@@ -1,15 +1,20 @@
 package tdd.fizzbuzz;
 
 public class FizzBuzz {
+    public static final int FIZZ_NUMBER = 3;
+    public static final int BUZZ_NUMBER = 5;
+    public static final String FIZZ = "fizz";
+    public static final String BUZZ = "buzz";
+
     public static String generateFizzBuzzResult(int order) {
-        if(order % 15 == 0) {
-            return "fizzbuzz";
+        if(order % (FIZZ_NUMBER * BUZZ_NUMBER) == 0) {
+            return FIZZ + BUZZ;
         }
-        else if(order % 3 == 0) {
-            return "fizz";
+        else if(order % FIZZ_NUMBER == 0) {
+            return FIZZ;
         }
-        else if(order % 5 == 0) {
-            return "buzz";
+        else if(order % BUZZ_NUMBER == 0) {
+            return BUZZ;
         }
         else if(order > 0) {
             return String.valueOf(order);
