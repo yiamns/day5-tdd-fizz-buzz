@@ -15,6 +15,15 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_2_when_input_2() {
+        int order = 2;
+
+        String word = FizzBuzz.countOff(order);
+
+        assertEquals("2", word);
+    }
+
+    @Test
     public void should_return_fizz_when_input_can_divided_by_3() {
         int order = 3;
 
