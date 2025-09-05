@@ -2,7 +2,7 @@ package tdd.rover;
 
 public class MarsRover {
     public static String roverMove(LocationDirection input, String command) {
-        if (command.equals("M")){
+        if (command.equals("M")) {
             if (input.getDirection().equals("N")) {
                 input.setY(input.getY() + 1);
                 return input.toString();
@@ -19,8 +19,7 @@ public class MarsRover {
                 input.setX(input.getX() - 1);
                 return input.toString();
             }
-        }
-        else if (command.equals("L")){
+        } else if (command.equals("L")) {
             if (input.getDirection().equals("N")) {
                 input.setDirection("W");
                 return input.toString();
@@ -37,8 +36,7 @@ public class MarsRover {
                 input.setDirection("N");
                 return input.toString();
             }
-        }
-        else if (command.equals("R")){
+        } else if (command.equals("R")) {
             if (input.getDirection().equals("N")) {
                 input.setDirection("E");
                 return input.toString();
@@ -56,8 +54,6 @@ public class MarsRover {
                 return input.toString();
             }
         }
-
-
         return null;
     }
 }
