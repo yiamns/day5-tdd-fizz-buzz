@@ -15,7 +15,7 @@ public class FizzBuzz {
             return String.valueOf(order);
         }
         else {
-            throw new IllegalArgumentException("Input must be a positive integer.");
+            return "";
         }
     }
 }

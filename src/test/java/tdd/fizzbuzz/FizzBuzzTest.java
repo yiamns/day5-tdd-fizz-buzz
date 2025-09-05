@@ -16,11 +16,11 @@ public class FizzBuzzTest {
 
     @Test
     public void should_return_2_when_input_2() {
-        int order = 2;
+        int order = 13;
 
         String word = FizzBuzz.countOff(order);
 
-        assertEquals("2", word);
+        assertEquals("13", word);
     }
 
     @Test
@@ -48,5 +48,14 @@ public class FizzBuzzTest {
         String word = FizzBuzz.countOff(order);
 
         assertEquals("fizzbuzz", word);
+    }
+
+    @Test
+    public void should_blank_when_input_Less_than_or_equal_to_0() {
+        int order = -1;
+
+        String word = FizzBuzz.countOff(order);
+
+        assertEquals("", word);
     }
 }
