@@ -40,4 +40,13 @@ public class FizzBuzzTest {
 
         assertEquals("buzz", word);
     }
+
+    @Test
+    public void should_return_fizzbuzz_when_input_can_divided_by_3_and_5() {
+        int order = 150;
+
+        String word = FizzBuzz.countOff(order);
+
+        assertEquals("fizzbuzz", word);
+    }
 }
